@@ -37,3 +37,24 @@ def moyenne_tuples(liste,nom="tous",matiere="toutes"):
 
 moyenne_tuples(notes,"eleve1")
 moyenne_tuples(notes,"eleve1","math")
+
+### 5 
+class Note:
+  def __init__(self, eleve, matiere, valeur): #La méthode pour créer un objet
+    self.eleve = eleve
+    self.matiere = matiere
+    self.valeur = valeur
+
+
+  def afficher(self):
+    print('Eleve:', self.eleve, 'Matiére :', self.matiere, 'Note :', self.valeur)
+
+
+onote = Note('eleve1', 'maths', 13)
+print(onote.eleve)
+print(onote.matiere)
+print(onote.valeur)
+Note.afficher(onote)
+onotes = []
+#for a in notes:
+# onotes.append(Note(a))
