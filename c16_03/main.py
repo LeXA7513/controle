@@ -18,8 +18,8 @@ def moyenne_tuples(liste,nom=None,matiere=None):
     liste_eleve= [x for x in liste if x[0] == nom or nom == None]
     liste_matiere= [x for x in liste_eleve if x[1] == matiere or matiere == None]
     res = [x[2] for x in liste_matiere ]
-    res = round(sum(res)/len(res),2)
-  return print(res)
+    res = sum(res)/len(res)
+  return res
 
 # Question 4 a
 moyenne_tuples(notes,"eleve1",)
@@ -72,13 +72,12 @@ notef = ('Gérard', 'dessin', 12)
 noteg = ('Gérard', 'dessin', 11.5)
 noteh = ('Gérard', 'art', 16)
 
-notes_enregistrés = [notea, noteb, notec, noted, notee, notef,noteg,noteh]
+notes_enregistrées = [notea, noteb, notec, noted, notee, notef,noteg,noteh]
 
 # À la fin de la méthode init une ligne pour ajouter la note que vos venez de créer à la liste. Elle est referencée par self. ???????????????????????
 
 # Question 8
-def moyenne_Notes(nom="tous le monde",matiere="toutes les matiéres"):
-  liste = notes_enregistrés
+def moyenne_Notes(liste):
   res=0
   n=0
   for a in liste :
@@ -102,7 +101,7 @@ def moyenne_Notes(nom="tous le monde",matiere="toutes les matiéres"):
   res=round(res/n,2)
   return print(f"La moyenne de {nom}, pour {matiere} est de {res}/20.")
 
-moyenne_Notes()
+moyenne_Notes(notes_enregistrés)
 
 #Question 9
 
