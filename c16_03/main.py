@@ -29,11 +29,13 @@ print(moyenne_tuples(notes,"eleve1","math"))
 
 
 # Question 5 
+notes_enregistrées = []
 class Note:
   def __init__(self, eleve, matiere, valeur):
     self.eleve = eleve
     self.matiere = matiere
     self.valeur = valeur
+    self = notes_enregistrées.append(self)
 
 
   def afficher(self):
@@ -52,42 +54,35 @@ onotes = []
 
 for a in notes:
   onotes.append(Note(a[0],a[1],a[2]))
-
-for x in range(len(onotes)) :
-  Note.afficher(onotes[x])
+#Pour afficher l'ensemble des notes avec la fonction Note.afficher()
+#for x in range(len(onotes)) :
+#  Note.afficher(onotes[x])
 
 # Question 6
-
+#Afficher l'ensemble des notes avec la fonction prin()
 for x in range(len(onotes)) :
   print(onotes[x])
 
 # Question 7
+for x in range(len(notes_enregistrées)) :
+  print(notes_enregistrées[x])
 
-notea = ('LeXA', 'art', 17)
-noteb = ('LeXA', 'poterie', 11)
-notec = ('LeXA', 'dessin', 14.5)
-noted = ('Patrick', 'art', 18)
-notee = ('Patrick', 'dessin', 8)
-notef = ('Gérard', 'dessin', 12)
-noteg = ('Gérard', 'dessin', 11.5)
-noteh = ('Gérard', 'art', 16)
 
-notes_enregistrées = [notea, noteb, notec, noted, notee, notef,noteg,noteh]
 
-# À la fin de la méthode init une ligne pour ajouter la note que vos venez de créer à la liste. Elle est referencée par self. ???????????????????????
+
 
 # Question 8
-def moyenne_Notes(liste,nom = None,matiere = None):
-  res = []
-  liste_eleve=[]
-  for a in liste :
-    liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
-    liste_matiere= [x for x in liste_eleve if x.matiere == matiere or matiere == None]
-    res = [x.valeur for x in liste_matiere ]
-    moy = sum(res)/len(res)
-  return moy
+#def moyenne_Notes(liste,nom = None,matiere = None):
+#  res = []
+#  liste_eleve=[]
+#  for a in liste :
+#    liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
+#    liste_matiere= [x for x in liste_eleve if x.matiere == matiere or matiere == None]
+#    res = [x.valeur for x in liste_matiere ]
+#    moy = sum(res)/len(res)
+#  return moy
 
-print(moyenne_Notes(notes_enregistrées))
+#print(moyenne_Notes(notes_enregistrées))
 
 #Question 9
 
