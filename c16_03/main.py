@@ -18,14 +18,14 @@ def moyenne_tuples(liste,nom=None,matiere=None):
     liste_eleve= [x for x in liste if x[0] == nom or nom == None]
     liste_matiere= [x for x in liste_eleve if x[1] == matiere or matiere == None]
     res = [x[2] for x in liste_matiere ]
-    res = sum(res)/len(res)
-  return res
+    moy = sum(res)/len(res)
+  return moy
 
 # Question 4 a
-moyenne_tuples(notes,"eleve1",)
+print(moyenne_tuples(notes,"eleve1",))
 
 # Question 4 b
-moyenne_tuples(notes,"eleve1","math")
+print(moyenne_tuples(notes,"eleve1","math"))
 
 
 # Question 5 
@@ -49,7 +49,7 @@ print(onote.valeur)
 Note.afficher(onote)
 onotes = []
 
-#RAJOUTER en PLUS aprés le cour du 16/03 de midi
+
 for a in notes:
   onotes.append(Note(a[0],a[1],a[2]))
 
@@ -77,31 +77,17 @@ notes_enregistrées = [notea, noteb, notec, noted, notee, notef,noteg,noteh]
 # À la fin de la méthode init une ligne pour ajouter la note que vos venez de créer à la liste. Elle est referencée par self. ???????????????????????
 
 # Question 8
-def moyenne_Notes(liste):
-  res=0
-  n=0
+def moyenne_Notes(liste,nom = None,matiere = None):
+  res = []
+  liste_eleve=[]
   for a in liste :
-    if (nom == "tous le monde"):
-      if (matiere == "toutes les matiéres") :
-          res=res+a[2]
-          n=n+1
-      else :
-        if (a[1]== str(matiere)):
-         res=res+a[2]
-         n=n+1      
-    else :
-      if (a[0]== str(nom)) :
-          if (matiere == "toutes les matiéres") :
-              res=res+a[2]
-              n=n+1
-          else :
-            if (a[1]== str(matiere)):
-              res=res+a[2]
-              n=n+1
-  res=round(res/n,2)
-  return print(f"La moyenne de {nom}, pour {matiere} est de {res}/20.")
+    liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
+    liste_matiere= [x for x in liste_eleve if x.matiere == matiere or matiere == None]
+    res = [x.valeur for x in liste_matiere ]
+    moy = sum(res)/len(res)
+  return moy
 
-moyenne_Notes(notes_enregistrés)
+print(moyenne_Notes(notes_enregistrées))
 
 #Question 9
 
