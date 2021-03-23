@@ -81,8 +81,12 @@ print(moyenne_Notes())
 print("Question 9")
 
 class demo :
-  def __init__(self, a):
-    self.a = a
+  def __init__(self,x):
     self.instances = []
-    self.instances.append(self.a)
+    self.instances.append(x)
   
+#  @classmethod
+#  def moyenne(cls):
+#    return sum(cls.instances)/len(cls.instances)
+#demo(5)
+#print(demo.moyenne())
