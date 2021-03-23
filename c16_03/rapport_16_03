@@ -1,12 +1,12 @@
-================================================ test session starts ================================================
+============================= test session starts ==============================
 platform linux -- Python 3.9.2, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
 rootdir: /home/stidsem4/iut/2021/controle/axel.autogue/c16_03
 collected 7 items
 
-test_16_03.py F.FFFFF                                                                                         [100%]
+test_16_03.py F.FFFFF                                                    [100%]
 
-===================================================== FAILURES ======================================================
-_______________________________________________ Test1603sute.test_10 ________________________________________________
+=================================== FAILURES ===================================
+_____________________________ Test1603sute.test_10 _____________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
 
@@ -15,7 +15,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
 >           from .main  import Note
 
 test_16_03.py:94: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
     note1 = ('eleve1', 'math', 13)
     note2 = ('eleve1', 'physique', 15)
@@ -109,7 +109,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 >   print(moyenne_Notes(notes_enregistrées))
 
 main.py:90: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 liste = [('LeXA', 'art', 17), ('LeXA', 'poterie', 11), ('LeXA', 'dessin', 14.5), ('Patrick', 'art', 18), ('Patrick', 'dessin', 8), ('Gérard', 'dessin', 12), ...]
 nom = None, matiere = None
@@ -121,9 +121,9 @@ nom = None, matiere = None
 >       liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 
 main.py:84: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f02570e6850>
+.0 = <list_iterator object at 0x7fdca581a7c0>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -142,7 +142,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
 E          AssertionError: assert False
 
 test_16_03.py:96: AssertionError
------------------------------------------------ Captured stdout call ------------------------------------------------
+----------------------------- Captured stdout call -----------------------------
 13.0
 12.666666666666666
 eleve1
@@ -165,7 +165,7 @@ Eleve: eleve1 Matiére : eco Note : 13
 Eleve: eleve1 Matiére : math Note : 12
 Eleve: eleve2 Matiére : math Note : 13
 Eleve: eleve2 Matiére : math Note : 14
-________________________________________________ Test1603sute.test_4 ________________________________________________
+_____________________________ Test1603sute.test_4 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
 
@@ -188,20 +188,20 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
 >               from .main import moyenne_tuple as moyenne_tuples
 
 test_16_03.py:19: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 main.py:90: in <module>
     print(moyenne_Notes(notes_enregistrées))
 main.py:84: in moyenne_Notes
     liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f025718c550>
+.0 = <list_iterator object at 0x7fdca58bd700>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
 
 main.py:84: AttributeError
------------------------------------------------ Captured stdout call ------------------------------------------------
+----------------------------- Captured stdout call -----------------------------
 13.0
 12.666666666666666
 eleve1
@@ -224,7 +224,7 @@ Eleve: eleve1 Matiére : eco Note : 13
 Eleve: eleve1 Matiére : math Note : 12
 Eleve: eleve2 Matiére : math Note : 13
 Eleve: eleve2 Matiére : math Note : 14
-________________________________________________ Test1603sute.test_5 ________________________________________________
+_____________________________ Test1603sute.test_5 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
 
@@ -233,7 +233,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
 >           from .main  import Note, onotes
 
 test_16_03.py:33: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
     note1 = ('eleve1', 'math', 13)
     note2 = ('eleve1', 'physique', 15)
@@ -327,7 +327,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 >   print(moyenne_Notes(notes_enregistrées))
 
 main.py:90: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 liste = [('LeXA', 'art', 17), ('LeXA', 'poterie', 11), ('LeXA', 'dessin', 14.5), ('Patrick', 'art', 18), ('Patrick', 'dessin', 8), ('Gérard', 'dessin', 12), ...]
 nom = None, matiere = None
@@ -339,9 +339,9 @@ nom = None, matiere = None
 >       liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 
 main.py:84: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f02570e6250>
+.0 = <list_iterator object at 0x7fdca58a9b20>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -360,7 +360,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
 E           AssertionError: assert False
 
 test_16_03.py:35: AssertionError
------------------------------------------------ Captured stdout call ------------------------------------------------
+----------------------------- Captured stdout call -----------------------------
 13.0
 12.666666666666666
 eleve1
@@ -383,7 +383,7 @@ Eleve: eleve1 Matiére : eco Note : 13
 Eleve: eleve1 Matiére : math Note : 12
 Eleve: eleve2 Matiére : math Note : 13
 Eleve: eleve2 Matiére : math Note : 14
-________________________________________________ Test1603sute.test_6 ________________________________________________
+_____________________________ Test1603sute.test_6 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
 
@@ -391,20 +391,20 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
 >       from .main import Note, onotes
 
 test_16_03.py:41: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 main.py:90: in <module>
     print(moyenne_Notes(notes_enregistrées))
 main.py:84: in moyenne_Notes
     liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f025716f490>
+.0 = <list_iterator object at 0x7fdca58bb250>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
 
 main.py:84: AttributeError
------------------------------------------------ Captured stdout call ------------------------------------------------
+----------------------------- Captured stdout call -----------------------------
 13.0
 12.666666666666666
 eleve1
@@ -427,7 +427,7 @@ Eleve: eleve1 Matiére : eco Note : 13
 Eleve: eleve1 Matiére : math Note : 12
 Eleve: eleve2 Matiére : math Note : 13
 Eleve: eleve2 Matiére : math Note : 14
-________________________________________________ Test1603sute.test_8 ________________________________________________
+_____________________________ Test1603sute.test_8 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
 
@@ -436,20 +436,20 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
 >           from .main import Note
 
 test_16_03.py:67: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 main.py:90: in <module>
     print(moyenne_Notes(notes_enregistrées))
 main.py:84: in moyenne_Notes
     liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f025703e160>
+.0 = <list_iterator object at 0x7fdca5772d30>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
 
 main.py:84: AttributeError
------------------------------------------------ Captured stdout call ------------------------------------------------
+----------------------------- Captured stdout call -----------------------------
 13.0
 12.666666666666666
 eleve1
@@ -472,7 +472,7 @@ Eleve: eleve1 Matiére : eco Note : 13
 Eleve: eleve1 Matiére : math Note : 12
 Eleve: eleve2 Matiére : math Note : 13
 Eleve: eleve2 Matiére : math Note : 14
-________________________________________________ Test1603sute.test_9 ________________________________________________
+_____________________________ Test1603sute.test_9 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
 
@@ -481,7 +481,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
 >           from .main  import Note
 
 test_16_03.py:87: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
     note1 = ('eleve1', 'math', 13)
     note2 = ('eleve1', 'physique', 15)
@@ -575,7 +575,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 >   print(moyenne_Notes(notes_enregistrées))
 
 main.py:90: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 liste = [('LeXA', 'art', 17), ('LeXA', 'poterie', 11), ('LeXA', 'dessin', 14.5), ('Patrick', 'art', 18), ('Patrick', 'dessin', 8), ('Gérard', 'dessin', 12), ...]
 nom = None, matiere = None
@@ -587,9 +587,9 @@ nom = None, matiere = None
 >       liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 
 main.py:84: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f025716be20>
+.0 = <list_iterator object at 0x7fdca58a1af0>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -608,7 +608,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
 E          AssertionError: assert False
 
 test_16_03.py:89: AssertionError
------------------------------------------------ Captured stdout call ------------------------------------------------
+----------------------------- Captured stdout call -----------------------------
 13.0
 12.666666666666666
 eleve1
@@ -631,11 +631,11 @@ Eleve: eleve1 Matiére : eco Note : 13
 Eleve: eleve1 Matiére : math Note : 12
 Eleve: eleve2 Matiére : math Note : 13
 Eleve: eleve2 Matiére : math Note : 14
-============================================== short test summary info ==============================================
+=========================== short test summary info ============================
 FAILED test_16_03.py::Test1603sute::test_10 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_4 - AttributeError: 'tuple' object has no attribute 'eleve'
+FAILED test_16_03.py::Test1603sute::test_4 - AttributeError: 'tuple' object h...
 FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_6 - AttributeError: 'tuple' object has no attribute 'eleve'
-FAILED test_16_03.py::Test1603sute::test_8 - AttributeError: 'tuple' object has no attribute 'eleve'
+FAILED test_16_03.py::Test1603sute::test_6 - AttributeError: 'tuple' object h...
+FAILED test_16_03.py::Test1603sute::test_8 - AttributeError: 'tuple' object h...
 FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
-============================================ 6 failed, 1 passed in 0.10s ============================================
+========================= 6 failed, 1 passed in 0.13s ==========================
