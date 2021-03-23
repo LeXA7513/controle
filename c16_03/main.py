@@ -78,5 +78,11 @@ def moyenne_Notes(nom=None,matiere=None):
 
 print(moyenne_Notes())
 
-#Question 9
+print("Question 9")
 
+class demo :
+  def __init__(self, a):
+    self.a = a
+    self.instances = []
+    self.instances.append(self.a)
+  
