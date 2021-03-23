@@ -11,33 +11,22 @@ notes = [note1, note2, note3, note4, note5, note6,note7,note8]
 
 # Question 4
 # Question 4 c
-def moyenne_tuples(liste,nom="tous",matiere="toutes"):
-  res=0
-  n=0
+def moyenne_tuples(liste,nom=None,matiere=None):
+  res = []
+  liste_eleve=[]
   for a in liste :
-    if (nom == "tous"):
-      if (matiere == "toutes") :
-          res=res+a[2]
-          n=n+1
-      else :
-        if (a[1]== str(matiere)):
-         res=res+a[2]
-         n=n+1      
-    else :
-      if (a[0]== str(nom)) :
-          if (matiere == "toutes") :
-              res=res+a[2]
-              n=n+1
-          else :
-            if (a[1]== str(matiere)):
-              res=res+a[2]
-              n=n+1
-  res=round(res/n,2)
+    liste_eleve= [x for x in liste if x[0] == nom or nom == None]
+    liste_matiere= [x for x in liste_eleve if x[1] == matiere or matiere == None]
+    res = [x[2] for x in liste_matiere ]
+    res = round(sum(res)/len(res),2)
   return print(res)
+
 # Question 4 a
-moyenne_tuples(notes,"eleve1")
+moyenne_tuples(notes,"eleve1",)
+
 # Question 4 b
 moyenne_tuples(notes,"eleve1","math")
+
 
 # Question 5 
 class Note:
