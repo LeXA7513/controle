@@ -123,7 +123,7 @@ nom = None, matiere = None
 main.py:84: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f9dd3c09790>
+.0 = <list_iterator object at 0x7fd5f3a267f0>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -195,7 +195,7 @@ main.py:84: in moyenne_Notes
     liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f9dd3cac7c0>
+.0 = <list_iterator object at 0x7fd5f3ac8730>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -341,7 +341,7 @@ nom = None, matiere = None
 main.py:84: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f9dd3c98850>
+.0 = <list_iterator object at 0x7fd5f3ab5b20>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -398,7 +398,7 @@ main.py:84: in moyenne_Notes
     liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f9dd3cab1f0>
+.0 = <list_iterator object at 0x7fd5f3ac78b0>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -443,7 +443,7 @@ main.py:84: in moyenne_Notes
     liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f9dd3c914c0>
+.0 = <list_iterator object at 0x7fd5f3aad100>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -589,7 +589,7 @@ nom = None, matiere = None
 main.py:84: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <list_iterator object at 0x7f9dd3c09520>
+.0 = <list_iterator object at 0x7fd5f3aaf670>
 
 >   liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
 E   AttributeError: 'tuple' object has no attribute 'eleve'
@@ -638,4 +638,4 @@ FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
 FAILED test_16_03.py::Test1603sute::test_6 - AttributeError: 'tuple' object h...
 FAILED test_16_03.py::Test1603sute::test_8 - AttributeError: 'tuple' object h...
 FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
-========================= 6 failed, 1 passed in 0.12s ==========================
+========================= 6 failed, 1 passed in 0.10s ==========================
