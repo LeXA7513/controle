@@ -1,0 +1,150 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /home/stidsem4/iut/2021/controle/axel.autogue/c16_03
+collected 7 items
+
+test_16_03.py F.F..FF                                                    [100%]
+
+=================================== FAILURES ===================================
+_____________________________ Test1603sute.test_10 _____________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
+
+    def test_10(self):
+        try:
+            from .main  import Note
+        except:
+           assert False
+        try:
+>           Note.vider()
+E           AttributeError: type object 'Note' has no attribute 'vider'
+
+test_16_03.py:98: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
+
+    def test_10(self):
+        try:
+            from .main  import Note
+        except:
+           assert False
+        try:
+            Note.vider()
+        except:
+>           assert False
+E           AssertionError: assert False
+
+test_16_03.py:100: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Question 4 a
+13.0
+Question 4 b
+12.666666666666666
+Question 6
+Eleve: eleve1 Matiére : math Note : 13
+Eleve: eleve1 Matiére : physique Note : 15
+Eleve: eleve1 Matiére : math Note : 13
+Eleve: eleve1 Matiére : eco Note : 12
+Eleve: eleve1 Matiére : eco Note : 13
+Eleve: eleve1 Matiére : math Note : 12
+Eleve: eleve2 Matiére : math Note : 13
+Eleve: eleve2 Matiére : math Note : 14
+Question 7
+Eleve: eleve1 Matiére : math Note : 13
+Eleve: eleve1 Matiére : physique Note : 15
+Eleve: eleve1 Matiére : math Note : 13
+Eleve: eleve1 Matiére : eco Note : 12
+Eleve: eleve1 Matiére : eco Note : 13
+Eleve: eleve1 Matiére : math Note : 12
+Eleve: eleve2 Matiére : math Note : 13
+Eleve: eleve2 Matiére : math Note : 14
+Question 8
+13.125
+Question 9
+_____________________________ Test1603sute.test_4 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
+
+    def test_4(self):
+        try:
+>           from main import moyenne_tuples
+E           ImportError: cannot import name 'moyenne_tuples' from 'main' (/home/stidsem4/iut/2021/controle/axel.autogue/main.py)
+
+test_16_03.py:16: ImportError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
+
+    def test_4(self):
+        try:
+            from main import moyenne_tuples
+        except ImportError:
+            try:
+>               from .main import moyenne_tuple as moyenne_tuples
+E               ImportError: cannot import name 'moyenne_tuple' from 'c16_03.main' (/home/stidsem4/iut/2021/controle/axel.autogue/c16_03/main.py)
+
+test_16_03.py:19: ImportError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
+
+    def test_4(self):
+        try:
+            from main import moyenne_tuples
+        except ImportError:
+            try:
+                from .main import moyenne_tuple as moyenne_tuples
+            except ImportError:
+>               assert False, "moyenne_tuples non définie"
+E               AssertionError: moyenne_tuples non définie
+E               assert False
+
+test_16_03.py:21: AssertionError
+_____________________________ Test1603sute.test_8 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
+
+    def test_8(self):
+        try:
+            from .main import Note
+        except ImportError:
+            assert False, "import de Note impossible"
+        try:
+            from .main  import moyenne_Notes as mnotes
+        except ImportError:
+            try:
+                from .main  import moyenne_notes as mnotes
+            except ImportError:
+                assert False, "La fonction moyenne_notes n'est pas définie"
+        note1 = Note('elv1', 'xx', 14)
+        note2 = Note('elv1', 'xx',  15)
+        note3 = Note('elv2', 'yy', 15)
+        notes = note1, note2, note3
+>       assert mnotes(notes, 'elv1', 'xx') == 14.5
+E       TypeError: moyenne_Notes() takes from 0 to 2 positional arguments but 3 were given
+
+test_16_03.py:81: TypeError
+_____________________________ Test1603sute.test_9 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
+
+    def test_9(self):
+        try:
+            from .main  import Note
+        except:
+           assert False
+>       assert hasattr(Note, 'instances')
+E       AssertionError: assert False
+E        +  where False = hasattr(<class 'c16_03.main.Note'>, 'instances')
+
+test_16_03.py:90: AssertionError
+=========================== short test summary info ============================
+FAILED test_16_03.py::Test1603sute::test_10 - AssertionError: assert False
+FAILED test_16_03.py::Test1603sute::test_4 - AssertionError: moyenne_tuples n...
+FAILED test_16_03.py::Test1603sute::test_8 - TypeError: moyenne_Notes() takes...
+FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
+========================= 4 failed, 3 passed in 0.09s ==========================
