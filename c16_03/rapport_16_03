@@ -38,10 +38,6 @@ E           AssertionError: assert False
 
 test_16_03.py:100: AssertionError
 ----------------------------- Captured stdout call -----------------------------
-Question 4 a
-13.0
-Question 4 b
-12.666666666666666
 Question 6
 Eleve: eleve1 Matiére : math Note : 13
 Eleve: eleve1 Matiére : physique Note : 15
