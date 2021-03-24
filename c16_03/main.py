@@ -10,6 +10,17 @@ note8 = ('eleve2', 'math', 14)
 notes = [note1, note2, note3, note4, note5, note6,note7,note8]
 
 # Question 4
+
+
+#Question 4 a
+note_eleve1=[x[2] for x in notes if x[0] == "eleve1"]
+moyenne_eleve1=sum(note_eleve1)/len(note_eleve1)
+
+#Question 4 b
+note_eleve1_math=[x[2] for x in notes if x[1] == "math" and x[0] == "eleve1"]
+moyenne_eleve1_math=sum(note_eleve1_math)/len(note_eleve1_math)
+
+
 # Question 4 c
 def moyenne_tuples(liste,nom=None,matiere=None):
   res = []
@@ -21,13 +32,7 @@ def moyenne_tuples(liste,nom=None,matiere=None):
     moy = sum(res)/len(res)
   return moy
 
-print("Question 4 a")
-print(moyenne_tuples(notes,"eleve1",))
-
-print("Question 4 b")
-print(moyenne_tuples(notes,"eleve1","math"))
-
-
+moyenne_eleve1_eco = moyenne_tuples(notes,"eleve1","eco")
 #Question 5
 
 notes_enregistrées = []
@@ -54,7 +59,7 @@ for a in notes:
 #  Note.afficher(onotes[x])
 
 print("Question 6")
-#Afficher l'ensemble des notes avec la fonction prin()
+#Afficher l'ensemble des notes avec la fonction print()
 for x in range(len(onotes)) :
   print(onotes[x])
 
