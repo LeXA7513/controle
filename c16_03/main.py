@@ -50,6 +50,16 @@ class Note:
     return f"Eleve: {self.eleve} Matiére : {self.matiere} Note : {self.valeur}"
   
   @classmethod
+  def moyenne(cls):
+    res = [x.valeur for x in cls.instances ]
+    moy = sum(res)/len(res)
+    return moy
+
+  @classmethod
+  def vider(cls):
+    cls.instances = []
+      
+  @classmethod
   def moyenne_Notes(cls,nom=None,matiere=None):
     res = []
     liste_eleve=[]
@@ -74,20 +84,20 @@ for x in range(len(onotes)) :
 
 print("Question 7")
 #Démonstration de la sauvegarde des notes de facon automatique
-notes_enregistrées = []
-for x in range(len(notes_enregistrées)) :
-  print(notes_enregistrées[x])
+
+for x in range(len(Note.instances)) :
+  print(Note.instances[x])
 
 print("Question 8")
 
-#print(Note.moyenne_Notes())
+print(Note.moyenne_Notes())
 
-print("Question 9")
+#Question 9
+#Voir Question 7
 
-   
+
+print("Question 10")
+
+print(Note.moyenne())   
   
-#  @classmethod
-#  def moyenne(cls):
-#    return sum(cls.instances)/len(cls.instances)
-#demo(5)
-#print(demo.moyenne())
+
