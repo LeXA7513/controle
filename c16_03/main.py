@@ -35,21 +35,30 @@ def moyenne_tuples(liste,nom=None,matiere=None):
 moyenne_eleve1_eco = moyenne_tuples(notes,"eleve1","eco")
 #Question 5
 
-notes_enregistrées = []
 class Note:
+  instances = []
   def __init__(self, eleve, matiere, valeur):
     self.eleve = eleve
     self.matiere = matiere
     self.valeur = valeur
-    self = notes_enregistrées.append(self)
-
+    self.instances.append(self)
 
   def afficher(self):
     print('Eleve:', self.eleve, 'Matiére :', self.matiere, 'Note :', self.valeur)
   
   def __str__(self):
     return f"Eleve: {self.eleve} Matiére : {self.matiere} Note : {self.valeur}"
-
+  
+  @classmethod
+  def moyenne_Notes(cls,nom=None,matiere=None):
+    res = []
+    liste_eleve=[]
+    for a in cls.instances :
+      liste_eleve= [x for x in cls.instances if x.eleve == nom or nom == None]
+      liste_matiere= [x for x in liste_eleve if x.matiere == matiere or matiere == None]
+      res = [x.valeur for x in liste_matiere ]
+      moy = sum(res)/len(res)
+    return moy
 
 onotes = []
 for a in notes:
@@ -65,30 +74,17 @@ for x in range(len(onotes)) :
 
 print("Question 7")
 #Démonstration de la sauvegarde des notes de facon automatique
+notes_enregistrées = []
 for x in range(len(notes_enregistrées)) :
   print(notes_enregistrées[x])
 
 print("Question 8")
 
-def moyenne_Notes(nom=None,matiere=None):
-  liste = notes_enregistrées
-  res = []
-  liste_eleve=[]
-  for a in liste :
-    liste_eleve= [x for x in liste if x.eleve == nom or nom == None]
-    liste_matiere= [x for x in liste_eleve if x.matiere == matiere or matiere == None]
-    res = [x.valeur for x in liste_matiere ]
-    moy = sum(res)/len(res)
-  return moy
-
-print(moyenne_Notes())
+#print(Note.moyenne_Notes())
 
 print("Question 9")
 
-class demo :
-  def __init__(self,x):
-    self.instances = []
-    self.instances.append(x)
+   
   
 #  @classmethod
 #  def moyenne(cls):
