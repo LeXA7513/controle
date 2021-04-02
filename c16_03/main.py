@@ -99,5 +99,9 @@ print(Note.moyenne_Notes())
 print("Question 10")
 
 print(Note.moyenne())   
-  
+Note.vider()
+Note('eleve1','math',12)
 
+a= "eleve1"
+if  a == str(Note.instances[0].eleve)
+  return print("YES")
